@@ -1,0 +1,1311 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+body {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #efefef;
+}
+.banner {
+  background: rgba(0, 0, 0, 0.6) url(images/back_cer.webp);
+  background-blend-mode: darken;
+  background-size: cover;
+}
+@media (max-width: 800px) {
+  .banner {
+    background: rgba(0, 0, 0, 0.6) url(images/back_cer1.webp);
+    background-blend-mode: darken;
+    background-size: cover;
+  }
+}
+@media (max-width: 484px) {
+  .banner {
+    background: rgba(0, 0, 0, 0.6) url(images/back_cer2.webp);
+    background-blend-mode: darken;
+    background-size: cover;
+  }
+}
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card {
+  border-radius: 25px;
+  background-color: #fff;
+}
+.card-content,
+.image-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #d38312;
+  background: -webkit-linear-gradient(to right, #a83279, #d38312);
+  background: linear-gradient(to right, #a83279, #d38312);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay1::after,
+.overlay1::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #d38312;
+}
+.overlay1::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #73c8a9;
+  background: -webkit-linear-gradient(to right, #373b44, #73c8a9);
+  background: linear-gradient(to right, #373b44, #73c8a9);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay2::after,
+.overlay2::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #73c8a9;
+}
+.overlay2::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #fe8c00;
+  background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+  background: linear-gradient(to right, #f83600, #fe8c00);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay3::after,
+.overlay3::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #fe8c00;
+}
+.overlay3::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay4::after,
+.overlay4::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #00c6ff;
+}
+.overlay4::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #556270;
+  background: -webkit-linear-gradient(to right, #ff6b6b, #556270);
+  background: linear-gradient(to right, #ff6b6b, #556270);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay5::after,
+.overlay5::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #556270;
+}
+.overlay5::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #780206;
+  background: -webkit-linear-gradient(to right, #061161, #780206);
+  background: linear-gradient(to right, #061161, #780206);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay6::after,
+.overlay6::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #780206;
+}
+.overlay6::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay7 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #f0c27b;
+  background: -webkit-linear-gradient(to right, #4b1248, #f0c27b);
+  background: linear-gradient(to right, #4b1248, #f0c27b);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay7::after,
+.overlay7::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #f0c27b;
+}
+.overlay7::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay8 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #50c9c3;
+  background: -webkit-linear-gradient(to right, #96deda, #50c9c3);
+  background: linear-gradient(to right, #96deda, #50c9c3);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay8::after,
+.overlay8::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #50c9c3;
+}
+.overlay8::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay9 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #4b6cb7;
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+  background: linear-gradient(to right, #182848, #4b6cb7);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay9::after,
+.overlay9::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4b6cb7;
+}
+.overlay9::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay10 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #355c7d;
+  background: -webkit-linear-gradient(to right, #c06c84, #6c5b7b, #355c7d);
+  background: linear-gradient(to right, #c06c84, #6c5b7b, #355c7d);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay10::after,
+.overlay10::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #355c7d;
+}
+.overlay10::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay11 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #667db6;
+  background: -webkit-linear-gradient(
+    to right,
+    #667db6,
+    #0082c8,
+    #0082c8,
+    #667db6
+  );
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay11::after,
+.overlay11::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #667db6;
+}
+.overlay11::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay12 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #283c86;
+  background: -webkit-linear-gradient(to right, #45a247, #283c86);
+  background: linear-gradient(to right, #45a247, #283c86);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay12::after,
+.overlay12::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #283c86;
+}
+.overlay12::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay13 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #44a08d;
+  background: -webkit-linear-gradient(to right, #093637, #44a08d);
+  background: linear-gradient(to right, #093637, #44a08d);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay13::after,
+.overlay13::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #44a08d;
+}
+.overlay13::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay14 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffd89b;
+  background: -webkit-linear-gradient(to right, #19547b, #ffd89b);
+  background: linear-gradient(to right, #19547b, #ffd89b);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay14::after,
+.overlay14::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #ffd89b;
+}
+.overlay14::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay15 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #1d4350;
+  background: -webkit-linear-gradient(to right, #a43931, #1d4350);
+  background: linear-gradient(to right, #a43931, #1d4350);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay15::after,
+.overlay15::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #1d4350;
+}
+.overlay15::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay16 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #1f1c2c;
+  background: -webkit-linear-gradient(to right, #928dab, #1f1c2c);
+  background: linear-gradient(to right, #928dab, #1f1c2c);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay16::after,
+.overlay16::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #1f1c2c;
+}
+.overlay16::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay17 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #00416a;
+  background: -webkit-linear-gradient(to right, #e4e5e6, #00416a);
+  background: linear-gradient(to right, #e4e5e6, #00416a);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay17::after,
+.overlay17::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #00416a;
+}
+.overlay17::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay18 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay18::after,
+.overlay18::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #0f2027;
+}
+.overlay18::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.overlay19 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #c94b4b;
+  background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
+  background: linear-gradient(to right, #4b134f, #c94b4b);
+  border-radius: 25px 25px 0 25px;
+}
+.overlay19::after,
+.overlay19::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #c94b4b;
+}
+.overlay19::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070f4;
+}
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background: #265df2;
+  transform: scale(1.1);
+}
+.swiper-navBtn {
+  color: #6e93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+  color: #4070f4;
+}
+.swiper-navBtn::after,
+.swiper-navBtn::before {
+  font-size: 35px;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-pagination-bullet {
+  background: #ee0979;
+  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: #f7971e;
+  background: -webkit-linear-gradient(to right, #ffd200, #f7971e);
+  background: linear-gradient(to right, #ffd200, #f7971e);
+}
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.slide-container {
+  margin-top: 120px;
+}
+.image1 {
+  display: none;
+}
+.image2 {
+  display: none;
+}
+.image3 {
+  display: none;
+}
+.image4 {
+  display: none;
+}
+.image5 {
+  display: none;
+}
+.image6 {
+  display: none;
+}
+.image7 {
+  display: none;
+}
+.image8 {
+  display: none;
+}
+.image9 {
+  display: none;
+}
+.image10 {
+  display: none;
+}
+.image11 {
+  display: none;
+}
+.image12 {
+  display: none;
+}
+.image13 {
+  display: none;
+}
+.image14 {
+  display: none;
+}
+.image15 {
+  display: none;
+}
+.image16 {
+  display: none;
+}
+.image17 {
+  display: none;
+}
+.image18 {
+  display: none;
+}
+.image19 {
+  display: none;
+}
+.container .popup-image1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image4 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image5 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image6 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image7 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image8 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image9 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image10 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image11 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image12 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image13 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image14 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image15 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image16 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image17 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image18 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image19 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-image1 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image2 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image3 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image4 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image5 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image6 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image7 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image8 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image9 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image10 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image11 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image12 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image13 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image14 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image15 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image16 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image17 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image18 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image19 span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image3 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image4 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image5 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image6 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image7 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image8 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image9 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image10 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image11 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image12 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image13 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image14 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image15 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image16 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image17 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image18 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+.container .popup-image19 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5ps solid #fff;
+  border: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .container .popup-image1 img {
+    width: 95%;
+  }
+  .container .popup-image2 img {
+    width: 95%;
+  }
+  .container .popup-image3 img {
+    width: 95%;
+  }
+  .container .popup-image4 img {
+    width: 95%;
+  }
+  .container .popup-image5 img {
+    width: 95%;
+  }
+  .container .popup-image6 img {
+    width: 95%;
+  }
+  .container .popup-image7 img {
+    width: 95%;
+  }
+  .container .popup-image8 img {
+    width: 95%;
+  }
+  .container .popup-image9 img {
+    width: 95%;
+  }
+  .container .popup-image10 img {
+    width: 95%;
+  }
+  .container .popup-image11 img {
+    width: 95%;
+  }
+  .container .popup-image12 img {
+    width: 95%;
+  }
+  .container .popup-image13 img {
+    width: 95%;
+  }
+  .container .popup-image14 img {
+    width: 95%;
+  }
+  .container .popup-image15 img {
+    width: 95%;
+  }
+  .container .popup-image16 img {
+    width: 95%;
+  }
+  .container .popup-image17 img {
+    width: 95%;
+  }
+  .container .popup-image18 img {
+    width: 95%;
+  }
+  .container .popup-image19 img {
+    width: 95%;
+  }
+}
